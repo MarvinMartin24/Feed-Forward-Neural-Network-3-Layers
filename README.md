@@ -8,7 +8,7 @@ Only Numpy !
 
 ## RUN
 ```bash
-git clone https://github.com/MarvinMartin24/
+https://github.com/MarvinMartin24/Feed-Forward-Neural-Network-3-Layers.git
 ```
 Go to your file directory, and run this command :
 ```bash
