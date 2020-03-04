@@ -19,7 +19,6 @@ python3 main.py
 fnn = FFNN(2, 4, 1)
 fnn.fit(x_train, y_train)
 print('Input',x_train)
-print()
 print('Predition', np.around(fnn.predict(x_train)))
 print('Label', y_train)
 ```
