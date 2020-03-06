@@ -21,10 +21,10 @@ class FFNN:
         self.hidden_layer = hidden_layer
         self.output_layer = output_layer
         self.input_layer = input_layer
-        self.W1 = np.random.rand(input_layer, hidden_layer)
-        self.W2 = np.random.rand(hidden_layer, output_layer)
-        self.B1 = np.random.rand(hidden_layer)
-        self.B2 = np.random.rand(output_layer)
+        self.W1 = np.random.rand(input_layer, hidden_layer) / np.sqrt(input_layer + hidden_layer)
+        self.W2 = np.random.rand(hidden_layer, output_layer) / np.sqrt(hidden_layer + output_layer)
+        self.B1 = np.random.rand(hidden_layer) / np.sqrt(input_layer + hidden_layer)
+        self.B2 = np.random.rand(output_layer) / np.sqrt(hidden_layer + output_layer)
 
 
     def fit(self, X_train, y_train, learning_rate=0.1, epochs=500):
